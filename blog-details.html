@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Blog Details</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/bg-floral.jpg" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"/>
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/styles.css" rel="stylesheet" />
+
+    <style>
+        .post {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        margin-bottom: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+        .post:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+        .post img {
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+        .post .post-info h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+        .post .post-info .date {
+        color: #999999;
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+        .post .post-info p {
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+        .post .post-info .read-more,
+        .post .post-info .blog-details {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #ff8800d2;
+        transition: background-color 0.3s;
+        text-align: right;
+    }
+
+        .post .post-info .read-more:hover,
+        .post .post-info .blog-details:hover {
+        background-color: #ff9d00ba;
+    }
+
+        .post .post-info .d-flex.align-items-center {
+        margin-bottom: 0;
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        color: #999999;
+    }
+
+        .post .post-info .d-flex.align-items-center li {
+        margin-right: 10px;
+    }
+
+        .post .post-info .d-flex.align-items-center i {
+        margin-right: 5px;
+        color: #1a68bc;
+        font-size: 1.2rem;
+    }
+
+      /* Added style for the login button */
+        .login-button {
+        margin-right: 15px;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #1a68bc;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        position: absolute;
+        top: 20px; /* Atur posisi dari atas sesuai kebutuhan */
+        right: 20px; /* Atur posisi dari kanan sesuai kebutuhan */
+    }
+
+        .login-button:hover {
+        background-color: #125194;
+    }
+    </style>
+</head>
+
+    <body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+    <!-- ======= Cover Section ======= -->
+    <section
+    id="cover"
+    style="
+        background: url('assets/img/Blog/bg-blog.jpg') no-repeat center center;
+        background-size: cover;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center; "
+    >
+        <div style="
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 30px;
+        border-radius: 30px;
+        "
+    >
+        <h1 style="color: white; font-size: 3rem; margin-bottom: 10px">
+            B L O G
+        </h1>
+        <p style="color: white; font-size: 1.2rem">
+            Explore My Latest Articles And Insights
+        </p>
+        <a href="login.html" class="login-button">Login</a>
+    </div>
+</section>
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Blog Details</h2>
+                    <ol>
+                        <li   li><a href="index.html">Home</a></li>
+                    <li>Blog Details</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <!-- End Breadcrumbs -->
+
+    <div class="container">
+        <section class="featured-posts" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-6">
+                    <article class="post">
+                <img
+                    src="assets/img/Blog/blog-image1.png"
+                    alt="Post Image"
+                    class="img-fluid" />
+                <div class="post-info">
+                    <div class="d-flex justify-content-between align-items-center">
+                    <ul class="d-flex align-items-center">
+                    <li><i class="bi bi-person"></i> Eka Mardiana</li>
+                    <li>
+                    <i class="bi bi-clock"></i
+                    ><time datetime="2023-12-14">16 April, 2024</time>
+                    </li>
+                </ul>
+            </div>
+                <p>
+                    Halo, pencinta seni dan teknologi! Pernahkah kalian
+                    membayangkan kecerdasan buatan berpadu dengan kreativitas
+                    manusia dan menciptakan karya yang luar biasa? Yuk, kunjungi
+                    blog kami dan temukan bagaimana algoritma canggih dapat
+                    menjadi mitra proses artistik.
+                </p>
+                <div>
+                    <a
+                    href="https://www-bbvaopenmind-com.translate.goog/en/articles/artificial-intelligence-and-the-arts-toward-computational-creativity/?_x_tr_sl=en&_x_tr_tl=id&_x_tr_hl=id&_x_tr_pto=tc"
+                    class="read-more"
+                    >Read More</a>
+                </div>
+            </div>
+        </article>
+            </div>
+                <div class="col-lg-6">
+            <article class="post">
+                <img
+                src="assets/img/Blog/blog-image2.png"
+                alt="Post Image"
+                class="img-fluid"/>
+                <div class="post-info">
+            <div class="d-flex justify-content-between align-items-center">
+                <ul class="d-flex align-items-center">
+                    <li><i class="bi bi-person"></i> Eka Mardiana</li>
+                        <li>
+                        <i class="bi bi-clock"></i
+                        ><time datetime="2023-12-14">16 April, 2024</time>
+                    </li>
+                </ul>
+            </div>
+                <p>
+                    Hai, para gamers dan penikmat dunia virtual! Bagaimana cara
+                    psikologi sosial dapat memengaruhi pengalaman dalam bermain
+                    permainan online? Temukan jawabannya dalam blog saya yang
+                    membahas tantangan-tantangan unik yang dihadapi dalam dunia
+                    virtual.
+                </p>
+                    <div>
+                <a
+                    href="https://www-ncbi-nlm-nih-gov.translate.goog/pmc/articles/PMC10663235/?_x_tr_sl=en&_x_tr_tl=id&_x_tr_hl=id&_x_tr_pto=tc"
+                    class="read-more"
+                    >Read More</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+            </div>
+        </section>
+        <section class="recent-posts" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+            <div class="col-lg-6">
+                <article   article class="post">
+            <img
+                src="assets/img/Blog/blog-image3.png"
+                alt="Post Image"
+                class="img-fluid"/>
+                <div class="post-info">
+            <div class="d-flex justify-content-between align-items-center">
+                <ul class="d-flex align-items-center">
+                    <li><i class="bi bi-person"></i> Eka Mardiana</li>
+                    <li>
+                    <i class="bi bi-clock"></i
+                    ><time datetime="2023-12-14">4 April, 2023</time>
+                    </li>
+                </ul>
+            </div>
+                <p>
+                    Apakah Anda sedang mencari komponen terbaik untuk merakit
+                    komputer impian Anda? Kunjungi blog saya untuk menemukan
+                    ulasan mendalam tentang berbagai komponen komputer rakitan
+                    prosesor AMD.
+                </p>
+                    <div>
+                <a
+                    href="https://studieew.wordpress.com/2023/04/04/review-komponen-komputer-rakitan-dengan-processor-amd/"
+                    class="read-more"
+                    >Read More</a>
+                </div>
+            </div>
+        </article>
+            </div>
+                <div class="col-lg-6">
+                    <article class="post">
+                        <img src="assets/img/Blog/blog-image4.png" alt="Post Image" class="img-fluid"/>
+                <div class="post-info">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <ul class="d-flex align-items-center">
+                            <li><i class="bi bi-person"></i> Eka Mardiana</li>
+                                <li>
+                            <i class="bi bi-clock"></i
+                        ><time datetime="2023-12-14">18 Juni, 2023</time>
+                    </li>
+                </ul>
+            </div>
+                <p>
+                    Halo, para penggemar teknologi! Apakah Anda penasaran dengan
+                    evolusi salah satu sistem operasi mobile paling populer di
+                    dunia? Mari kunjungi blog kami untuk mengeksplorasi sejarah
+                    lengkap Android OS.
+                </p>
+                <div>
+                    <a
+                    href="https://studieew.wordpress.com/2023/06/18/sejarah-lengkap-tentang-android-os/"
+                    class="read-more"
+                    >Read More</a>
+                </div>
+            </div>
+        </article>
+    </div>
+</div>
+    </section>
+        </div>
+            <footer class="footer">
+        <div class="container text-center">
+    <p>&copy; 2024 ekamardianaap - studieew</p>
+        </div>
+            </footer>
+            <a href="#" class="back-to-top d-flex align-items-center justify-content-center"
+        ><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
